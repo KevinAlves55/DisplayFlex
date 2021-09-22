@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;/* A unidade vw é usada no width para facilitar no processo de responsividade de um site. */
+    height: 100vh; /* Mesmo esquema do vw só que quando falamos de altura usamos o vh */
+    display: flex;
+    /* 
+    
+        A propriedade display: flex; altera o tipo de display de um elemento, deixando flexível, muito usado em layouts que irão conter responsividade.
+
+        Com essa propriedade podemos usar várias outras propriedades como ferramentas para alteramos o item dentro delas ou o modo de exibição.
+    
+    */
+    flex-direction: column;
+    /* 
+    
+        A propriedade flex-direction: ; altera o modo de exibição dos eixos.
+        
+        Existem vários atributos para isso.
+
+        row: Padrão que deixa o modo de exibir em linha reta.
+        row-reverse: Mesma coisa, só que começando de trás pra frente.
+        column: Que exibe em sentido de uma coluna, um em baixo do outro.
+        column-reverse: Mesma coisa, apenas mudando a exibição de baixo pra cima.
+
+    */
+    background-color: #c6c6c6;
+}
+
+header{
+    height: 100px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    /* 
+    
+        A propriedade justify-content: ; permite alterar o alinhamento horizontal dos itens de um display: flex; .
+
+        Existem vários atributos para isso.
+
+        flex-start: Alinha no inicio do eixo, ou seja, a direita.
+        flex-end: Alinha no final do eixo, ou seja, a esquerda.
+        center: Alinha no centro.
+    */
+    align-items: center;
+    /* 
+    
+        A propriedade align-items: ; permite alterar o alinhamento vertical dos itens de um display: flex; .
+
+        Existem vários atributos para isso.
+
+        center: Alinha no meio do elemento pai.
+
+    */
+}
+
+main{
+    flex-grow: 1;
+    /* 
+    
+        A propriedade flex-grow: ; define a habilidade de um flex item de crescer, caso necessário. O valor dessa propriedade é um valor numérico sem indicação de unidade, que serve para cálculo de proporção. Este valor dita a quantidade de espaço disponível no container que será ocupado pelo item.
+
+        Obs: Se todos os ítens tiverem flex-grow definido em 1, o espaço remanescente no container será distribuído de forma igual entre todos. Se um dos ítens tem o valor de 2, vai ocupar o dobro de espaço no container com relação aos outros (ou pelo menos vai tentar fazer isso).
+
+    */
+}
+
+main form {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* 
+    
+        A propriedade gap: ; serve para aplicamos um espaçamento interno nos elementos itens de um display: flex;.
+    
+    */
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+}
+
+.bk {
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-left: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+form input{
+    width: 50px;
+    margin-left: 10px;
+    height: 20px;
+    padding: 8px;
+    outline: none;
+    text-align: center;
+}
+
+#Rels {
+    margin-left: 120px;
+}
+
+#resultado {
+    width: 60px;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    background-color: white;
+}
+
+button {
+    width: 140px;
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+ .red { 
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.silver {
+    background-color: silver;
+}
+.black {
+    background-color: brown;
+}
